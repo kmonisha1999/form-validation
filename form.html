@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Facebook</title>
 	<link rel="stylesheet" href="css/form.css">
+	
 </head>
 <body>
 <div class="main">
@@ -17,17 +18,20 @@
 			<div class="login">
 			    <div class="box">
 				<form>
-					<input type="text" id="email" placeholder="Enter email or phone number"> 
-					<input type="password" id="password" placeholder="Password">
+					<input type="email" id="email" placeholder="Enter email Id"> </input>
+					<h3 id="empty"></h3>
+					<input type="password" id="psw" placeholder="Password"></input>
+					<h3 id="number"></h3>
 					<div class="sub">
-					<button type="submit" id="btn">Log in</button>
+					<button onclick="myFunction()" type="submit" value="Login"id="btn">Login</button>
+					
 					
 					</div>
 					<div class="line">
 					<span class="forget">Forgetten password?</span>
 					</div>
 					<div class="create">
-					    <button type="submit" id="btn1">Create New Account </button>
+					    <button type="submit" onclick="create()" id="btn1">Create New Account </button>
 					</div>
 				</form>
 				</div>
@@ -37,5 +41,11 @@
 </div>
 
 
+
+
+
+
+
+<script src="form.js"></script>
 </body>
 </html>

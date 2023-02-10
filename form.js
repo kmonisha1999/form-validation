@@ -16,15 +16,11 @@
 		}
 	else if(input1==""){	
 		    error.innerHTML="Email cannot be blank";
-			input1.style.border="red"
-			
 			}
-		else if(input2==""){
-				wrong.innerHTML="password cannot be blank";
-				
-			}
-			
+	else if(input2==""){
 	
+			wrong.innerHTML="password cannot be blank";
+			}		
 	}
 	
 
@@ -34,11 +30,9 @@
 		if(log!=="" && correct!==""){
 		window.location.href="file:///D:/fabevy/Practice/form-validation/success.html"
 		}
-		
-		
 	}
-		
-		
+	
+	
     	
  
 	

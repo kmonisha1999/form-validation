@@ -77,10 +77,8 @@
 	background-color:#1778f2;
 	border:none;
 	font-size:25px;
-color:white;}
-a{
-text-decoration:none;	
-}
+     color:white;}
+
 .forget{
 	display:flex;
 	justify-content:center;
@@ -113,15 +111,27 @@ text-decoration:none;
 	margin-bottom:10px;
 	color:red;
 }
-#btn1{
+/* #btn1{ */
+	/* width:80%; */
+	/* padding:12px; */
+	/* border-radius:10px; */
+	/* background-color:#42b72a; */
+	/* border:none; */
+	/* font-size:25px; */
+	/* color:white; */
+	
+/* } */
+.create{
+	text-align:center;
+}
+.create a{
 	width:80%;
 	padding:12px;
 	border-radius:10px;
 	background-color:#42b72a;
-	border:none;
+	cursor:pointer;
 	font-size:25px;
 	color:white;
-	
 }
 /* @media(min-width:360px){ */
 	/* .facebook{ */

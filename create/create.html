@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>create</title>
+	<link rel="stylesheet" href="css/create.css">
+	
+</head>
+<body>
+    <div class="create">
+        <div class="container">	
+	        <div class="main1">
+			    <div class="main">
+				    <div class="head">
+						<h1>Sign Up</h1>
+						<p>It's quick and easy</p>
+				    </div>
+					<hr>
+					<div class="form">
+					    <form>
+						    <input type="text" id="name"  placeholder="First Name" ></input>
+							<input type="text" id="sur" placeholder="Surname" ></input>
+							<h3 id="em"></h3>
+							<input type="email" id="email" class="in" placeholder="Email"></input>
+							<h3 id="empty"></h3>
+							<input type="password" id="psw" class="in"placeholder="New Password"></input>
+							<h3 id="number"></h3>
+							<label>Date of Birth: </label><input type="date" class="date"></input><br>
+							<div class="mar">
+							<label>Gender :</label>
+							<label>Male  </label><input type="radio">
+							<label>Female  </label><input type="radio">
+							<label>Other </label><input type="radio">
+							</div>
+							<div class="up">
+							    <input type="submit" class="cre" value="Sign Up"id="btn"></input>
+							</div>
+						
+						
+						</form>
+					</div>
+					
+			    </div>
+			</div>
+	    </div>
+	</div>
+	<script>
+	var x=document.getElementById("btn");
+   x.addEventListener ("click", validate);
+	function validate(event){
+		event.preventDefault();
+		var input1=document.getElementById("email").value;
+		
+		var input2=document.getElementById("psw").value;
+		var first=document.getElementById("name").value
+		var first1=document.getElementById("em")
+		var error=document.getElementById("empty");
+		var wrong=document.getElementById("number");
+	if((input1==="") && (input2 ==="") &&(first=="")){
+        error.innerHTML="email cannot be blank";
+		wrong.innerHTML="password cannot be blank";
+		 first1.innerHTML="Name and SurName cannot be blank";	
+		}
+	else if(input1==""){	
+		    error.innerHTML="Email cannot be blank";
+			}
+	else if(input2==""){
+			wrong.innerHTML="password cannot be blank";
+			}
+			}
+		
+		
+    
+   	
+   
+	
+	
+	</script>
+</body>
+</html>
